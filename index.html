@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="base">
+        <input  id="resultado" type="text" placeholder="0" disabled="disabled" >
+        <div class="bts">
+            <button class="c"   onclick="calcular('acao','c'),playSound()" type="button">C</button>
+            <button class="ce"  onclick="playSound()">CE</button>
+            <button class="som" onclick="toggleSom(),playSound()">🔊</button>
+            <button class="onoff"onclick="playSound()">ON/OFF</button>
+        </div>
+
+       <div class="bts1">
+       <button class="btss" onclick="calcular('valor','7'),playSound()" type="button">7</button>
+       <button class="btss" onclick="calcular('valor','8'),playSound()" type="button">8</button>
+       <button class="btss" onclick="calcular('valor','9'),playSound()" type="button">9</button>
+       <button class="btss" onclick="calcular('acao','/'),playSound()" type="button">/</button>
+       </div>
+
+       <div class="bts2">
+        <button class="btss" onclick="calcular('valor','4'),playSound()" type="button">4</button>
+        <button class="btss" onclick="calcular('valor','5'),playSound()" type="button">5</button>
+        <button class="btss" onclick="calcular('valor','6'),playSound()" type="button">6</button>
+        <button class="btss" onclick="calcular('acao','*'),playSound()" type="button">x</button>
+        </div>
+
+        <div class="bts3">
+         <button class="btss" onclick="calcular('valor','1'),playSound()" type="button">1</button>
+         <button class="btss" onclick="calcular('valor','2'),playSound()" type="button">2</button>
+         <button class="btss" onclick="calcular('valor','3'),playSound()" type="button">3</button>
+         <button class="btss" onclick="calcular('acao','-'),playSound()" type="button">-</button>
+        </div>
+        <div class="bts4">
+            <button class="btss" onclick="calcular('valor','0'),playSound()" type="button">0</button>
+            <button class="btss" onclick="calcular('acao','.'),playSound()" type="button">.</button>
+            <button class="btss" onclick="calcular('acao','='),playSound()" type="button">=</button>
+            <button class="btss" onclick="calcular('acao','+'),playSound()" type="button">+</button>
+        </div>  
+    </div>
+    </div>
+    
+    <audio id="myAudio" src="audio/click.mp3" autoplay></audio>
+
+    <script src="script.js">
+  
+    </script> 
+</body>
+</html>

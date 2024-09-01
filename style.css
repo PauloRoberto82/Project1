@@ -1,0 +1,134 @@
+@charset "UTF-8";
+*{
+    width:0px;
+    height:0px;
+}
+@font-face {
+    font-family: 'RR' ;
+    src: url('fonts/New\ X\ Digital\ Light\ tfb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    
+    background-image: linear-gradient(to bottom,rgb(4, 113, 110),rgb(24, 113, 110),rgb(34, 113, 110)  );
+}   
+
+.base{
+    padding: 10px 10px;
+    width: 300px;
+    height: 300px;
+    display:grid;
+    margin: 350px auto;
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#resultado{
+    margin: 5px;
+    padding: 3px 2px;
+    font-family:'RR' ;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: rgb(2, 2, 2); 
+    color:rgba(55, 232, 61, 0.859);
+    text-align: right;
+    border-radius: 10px;
+    border:1px black solid;
+}
+.c{
+    background-color: rgb(216, 93, 93);
+    width:60px;
+    height:40px;
+    border-radius: 10px;
+    border:2px solid;
+    box-shadow: 1px 2px #444343;
+}
+
+.ce{  
+    
+    background-color: rgb(234, 226, 118);
+    width:60px;
+    height:40px;
+    border-radius: 10px;
+    border:2px solid;
+    box-shadow: 1px 2px #444343;
+}
+
+.som{
+    background-color: rgb(157, 156, 156);
+    width:60px;
+    height:40px;
+    border-radius: 10px;
+    border:2px solid;
+    box-shadow: 1px 2px #444343;
+}
+
+.onoff{
+    background-color: rgb(8, 149, 119);
+    width:60px;
+    height:40px;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 1px 2px #444343;
+}
+.bts{
+    margin-top: 0px;
+    margin-left: 30px;
+    
+}
+.bts1{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.bts2{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.bts3{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.bts4{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+.btss{
+    font-size: 30px;
+    background-color: rgb(157, 156, 156);
+    width:60px;
+    height:40px;
+    border-radius: 10px;
+    border:2px solid;
+    box-shadow: 1px 2px #444343;
+}
+
+.c:active{   
+    background-color: rgb(35, 96, 239);
+    box-shadow: 0 1px #2d2d2d;
+    transform: translateY(1px);}
+.ce:active{   
+    background-color: rgb(35, 96, 239);
+    box-shadow: 0 1px #2d2d2d;
+    transform: translateY(1px);}
+.som:active{   
+    background-color: rgb(35, 96, 239);
+    box-shadow: 0 1px #2d2d2d;
+    transform: translateY(1px);}
+
+.onoff:active {
+    background-color: rgb(35, 96, 239);
+    box-shadow: 0 1px #2d2d2d;
+    transform: translateY(1px);}
+
+.btss:active {
+    background-color: rgb(8, 149, 119);
+    box-shadow: 0 1px #2d2d2d;
+    transform: translateY(1px);}
