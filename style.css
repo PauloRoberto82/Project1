@@ -1,113 +1,117 @@
 @charset "UTF-8";
 *{
-    width:0px;
-    height:0px;
+    margin: 0px;
+    padding: 0px;
 }
 @font-face {
     font-family: 'RR' ;
-    src: url('fonts/New\ X\ Digital\ Light\ tfb.ttf') format('truetype');
+    src: url('fonts/digital-7\ \(mono\ italic\).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 body{
     
-    background-image: linear-gradient(to bottom,rgb(4, 113, 110),rgb(24, 113, 110),rgb(34, 113, 110)  );
+    background-image: linear-gradient(to top, #3f5f78 50%,#6393c1 100%);
 }   
 
 .base{
-    padding: 10px 10px;
+    font-family: 'RR';
+    padding: 20px 20px;
     width: 300px;
     height: 300px;
     display:grid;
-    margin: 350px auto;
+    margin: 300px auto;
     background-color: rgb(33, 33, 33);
     border-radius: 10px;
     border: 2px black solid;
 }
-
-#resultado{
-    margin: 5px;
-    padding: 3px 2px;
+.ipt{
     font-family:'RR' ;
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 400;
     background-color: rgb(2, 2, 2); 
     color:rgba(55, 232, 61, 0.859);
     text-align: right;
     border-radius: 10px;
-    border:1px black solid;
+    border:2px rgb(126, 120, 120) solid;
+}
+::placeholder{
+   color: rgba(55, 232, 61, 0.859);
 }
 .c{
     background-color: rgb(216, 93, 93);
     width:60px;
     height:40px;
+    font-size: 20px;
     border-radius: 10px;
     border:2px solid;
-    box-shadow: 1px 2px #444343;
+    box-shadow: 2px 4px #444343;
 }
 
 .ce{  
-    
+    font-size: 20px;
     background-color: rgb(234, 226, 118);
     width:60px;
     height:40px;
     border-radius: 10px;
     border:2px solid;
-    box-shadow: 1px 2px #444343;
+    box-shadow: 2px 4px #444343;
 }
 
 .som{
-    background-color: rgb(157, 156, 156);
+    font-size: 15px;
+    background-color: rgb(79, 130, 129);
     width:60px;
     height:40px;
     border-radius: 10px;
     border:2px solid;
-    box-shadow: 1px 2px #444343;
+    box-shadow: 2px 4px #444343;
 }
 
 .onoff{
+    font-size: 15px;
     background-color: rgb(8, 149, 119);
     width:60px;
     height:40px;
     border-radius: 10px;
     border: 2px solid;
-    box-shadow: 1px 2px #444343;
+    box-shadow: 2px 4px #444343;
 }
 .bts{
-    margin-top: 0px;
-    margin-left: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
     
 }
 .bts1{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .bts2{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .bts3{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .bts4{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 
 .btss{
-    font-size: 30px;
+    font-size: 35px;
     background-color: rgb(157, 156, 156);
     width:60px;
     height:40px;
     border-radius: 10px;
     border:2px solid;
-    box-shadow: 1px 2px #444343;
+    box-shadow: 2px 4px #444343;
 }
 
 .c:active{   
@@ -129,6 +133,10 @@ body{
     transform: translateY(1px);}
 
 .btss:active {
-    background-color: rgb(8, 149, 119);
+    background-color: rgb(14, 98, 76);
     box-shadow: 0 1px #2d2d2d;
     transform: translateY(1px);}
+
+.btss:hover{
+color:rgb(7, 242, 203);
+}

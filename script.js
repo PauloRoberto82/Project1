@@ -36,10 +36,10 @@ function toggleSom() {
   const somButton = document.querySelector('.som');
   
   if (somAtivo) {
-    somButton.innerHTML = '🔊';
+    somButton.innerHTML = 'SOM';
     playSound = playSoundOriginal;
   } else {
-    somButton.innerHTML = '🔇';
+    somButton.innerHTML = 'MUDO';
     playSound = function() {}; // função vazia que não faz nada
   }
 }
