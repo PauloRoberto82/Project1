@@ -1,15 +1,16 @@
 @charset "UTF-8";
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 @font-face {
     font-family: 'RR' ;
     src: url('fonts/digital-7\ \(mono\ italic\).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     
     background-image: linear-gradient(to top, #3f5f78 50%,#6393c1 100%);
@@ -17,7 +18,7 @@ body{
 
 .base{
     font-family: 'RR';
-    padding: 20px 20px;
+    padding: 5px 0px;
     width: 300px;
     height: 300px;
     display:grid;
@@ -80,27 +81,27 @@ body{
 }
 .bts{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     
 }
 .bts1{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .bts2{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .bts3{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .bts4{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
@@ -139,4 +140,16 @@ body{
 
 .btss:hover{
 color:rgb(7, 242, 203);
+}
+.c:hover{
+ color:rgb(248, 45, 4);
+}
+.ce:hover{
+color:yellow;
+}
+.som:hover{
+color:rgb(10, 181, 178);
+}
+.onoff:hover{
+    color:aquamarine;
 }
