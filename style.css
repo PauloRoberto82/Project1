@@ -31,11 +31,11 @@ body{
     font-family:'RR' ;
     font-size: 30px;
     font-weight: 400;
-    background-color: rgb(2, 2, 2); 
+    background-color: rgb(98, 95, 95); 
     color:rgba(55, 232, 61, 0.859);
     text-align: right;
     border-radius: 10px;
-    border:2px rgb(126, 120, 120) solid;
+    border:2px rgb(0, 0, 0) solid;
 }
 ::placeholder{
    color: rgba(55, 232, 61, 0.859);
@@ -71,12 +71,13 @@ body{
 }
 
 .onoff{
-    font-size: 15px;
-    background-color: rgb(8, 149, 119);
+    color:rgba(55, 232, 61, 0.859);
+    font-size: 20px;
+    background-color: rgb(26, 41, 61);
     width:60px;
     height:40px;
     border-radius: 10px;
-    border: 2px solid;
+    border:black 2px solid;
     box-shadow: 2px 4px #444343;
 }
 .bts{
@@ -149,7 +150,4 @@ color:yellow;
 }
 .som:hover{
 color:rgb(10, 181, 178);
-}
-.onoff:hover{
-    color:aquamarine;
 }

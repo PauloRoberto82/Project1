@@ -44,3 +44,6 @@ function toggleSom() {
   }
 }
 
+function onoff(){
+  document.getElementById('onoff').click
+}
