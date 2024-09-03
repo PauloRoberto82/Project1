@@ -44,6 +44,3 @@ function toggleSom() {
   }
 }
 
-function onOff(){
-  
-}
