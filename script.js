@@ -1,5 +1,4 @@
 
-
 function calcular (tipo, valor){
     if(tipo === 'acao'){
         if(valor === 'c'){
@@ -45,35 +44,43 @@ function toggleSom() {
 }
 
 function onOff() {
-  // Get the button element
   const button = document.getElementById('onoff');
-  const inputs = document.getElementsByClassName('ipt'); 
-  
-  // Toggle the button's text and color
+  const inputs = document.getElementsByClassName('ipt');
+
   if (button.innerText === 'ON') {
     button.style.color = 'red';
     button.innerText = 'OFF';
     playSound = function() {};
-    document.getElementById('resultado').value= ''
-
-    // Change the color of the input elements to black
-    Array.prototype.forEach.call(inputs, function(input) {
+    
+    Array.from(inputs).forEach(input => {
       input.style.background = 'rgb(98, 95, 95)';
       input.style.color = 'rgb(98, 95, 95)';
-      input.style.setProperty('--placeholder-color', '');
     });
-  
   } else {
-    button.style.color = 'rgba(55, 232, 61)'; // reset to default color
+    button.style.color = 'rgba(55, 232, 61)';
     button.innerText = 'ON';
-    playSound = playSoundOriginal;
     document.getElementById('resultado').value= ''
+    playSound = playSoundOriginal;
     
-    // Reset the color of the input elements to default
-    Array.prototype.forEach.call(inputs, function(input) {
-      input.style.background = 'rgb(98, 95, 95)'; // or set it to a default color
+    Array.from(inputs).forEach(input => {
+      input.style.background = 'rgb(98, 95, 95)';
       input.style.color = 'rgba(55, 232, 61, 0.859)';
       input.style.setProperty('--placeholder-color', 'rgba(55, 232, 61, 0.859)');
     });
   }
 }
+
+function ce(input) {
+  const currentValue = input.value;
+  const newValue = currentValue.slice(0, -1);
+  input.value = newValue;
+}
+
+// Selecionar o botão CE com a classe "ce"
+const ceButton = document.querySelector('.ce');
+
+// Atribuir a função ao botão CE
+ceButton.addEventListener('click', () => {
+  const input = document.querySelector('input'); // Selecionar o input
+  ce(input);
+});

@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="base">
-        <input class="ipt" id="resultado" type="number" placeholder="0" disabled="disabled">
+        <input class="ipt" id="resultado" type="text" placeholder="0" disabled="disabled">
         
         <div class="bts">
-            <button class="c"   onclick="calcular('acao','c'),playSound()">C</button>
-            <button class="ce"  onclick="playSound()">CE</button>
+            <button class="c"   onclick="calcular('acao','c'),playSound()"><b>C</b></button>
+            <button class="ce"  onclick="playSound()">&#9654;</button>
             <button class="som" onclick="toggleSom(),playSound()">SOM</button>
             <button class="onoff" id="onoff" onclick="onOff(),playSound()"> ON </button>
         </div>
@@ -28,7 +28,7 @@
         <button class="btss" onclick="calcular('valor','4'),playSound()" type="button">4</button>
         <button class="btss" onclick="calcular('valor','5'),playSound()" type="button">5</button>
         <button class="btss" onclick="calcular('valor','6'),playSound()" type="button">6</button>
-        <button class="btss" onclick="calcular('acao','*'),playSound()" type="button">x</button>
+        <button class="btss" onclick="calcular('acao','*'),playSound()" type="button">*</button>
         </div>
 
         <div class="bts3">

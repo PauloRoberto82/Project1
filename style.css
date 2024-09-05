@@ -13,12 +13,11 @@
 
 body{
     background-image: linear-gradient(to top, #3f5f78 50%,#6393c1 100%);
-    justify-content: center;
 }   
 
 .base{
     font-family: 'RR';
-    padding: 5px 5px;
+    padding: 5px 5px 10px 0px;
     width: 300px;
     height: 300px;
     display:grid;
@@ -28,7 +27,6 @@ body{
     border: 2px black solid;
 }
 .ipt {
-    padding: 1px 5px;
     font-family: 'RR';
     font-size: 30px;
     font-weight: 400;
@@ -37,8 +35,10 @@ body{
     text-align: right;
     border-radius: 10px;
     border: 2px rgb(0, 0, 0) solid;
-    max-width: 280px; /* adjust the maximum width to your liking */
-    max-height: 30px; /* adjust the maximum height to your liking */
+    max-width: 270px; 
+    max-height: 40px;
+    margin-top: 5px; 
+    margin-left: 14px;
   }
 ::placeholder{
    color: rgba(55, 232, 61, 0.859);
@@ -78,7 +78,7 @@ body{
 
 .onoff{
     color:rgba(55, 232, 61, 0.859);
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgb(26, 41, 61);
     width:60px;
     height:40px;
@@ -123,25 +123,25 @@ body{
 }
 
 .c:active{   
-    background-color: rgb(35, 96, 239);
+    background-color:rgba(242, 238, 238, 0.077);
     box-shadow: 0 1px #2d2d2d;
     transform: translateY(1px);}
 .ce:active{   
-    background-color: rgb(35, 96, 239);
+    background-color:rgba(242, 238, 238, 0.077);
     box-shadow: 0 1px #2d2d2d;
     transform: translateY(1px);}
 .som:active{   
-    background-color: rgb(35, 96, 239);
+    background-color:rgba(242, 238, 238, 0.077);
     box-shadow: 0 1px #2d2d2d;
     transform: translateY(1px);}
 
 .onoff:active {
-    background-color: rgb(35, 96, 239);
+    background-color:rgba(242, 238, 238, 0.077);
     box-shadow: 0 1px #2d2d2d;
     transform: translateY(1px);}
 
 .btss:active {
-    background-color: rgb(14, 98, 76);
+    background-color: rgba(242, 238, 238, 0.077);
     box-shadow: 0 1px #2d2d2d;
     transform: translateY(1px);}
 
@@ -157,3 +157,4 @@ color:yellow;
 .som:hover{
 color:rgb(10, 181, 178);
 }
+
