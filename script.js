@@ -1,23 +1,38 @@
-
-function calcular (tipo, valor){
-    if(tipo === 'acao'){
-        if(valor === 'c'){
-            //limpar o visor (id resultado)
-            document.getElementById('resultado').value= ''
-        }
-        if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.' ){
-            document.getElementById('resultado').value += valor
-        }
-        if(valor === '='){
-            var valor_campo = eval(document.getElementById('resultado').value )
-            document.getElementById('resultado').value = valor_campo
-        }
-        console.log(eval(valor_campo))
+function calcular (tipo, valor,calcularTabuada){
+  if(tipo === 'acao'){
+      if(valor === 'c'){
+          //limpar o visor (id resultado)
+          document.getElementById('resultado').value= ''
+      }
+      if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.' ){
+          document.getElementById('resultado').value += valor
+      }
+      if(valor === '='){
+          var valor_campo = eval(document.getElementById('resultado').value )
+          document.getElementById('resultado').value = valor_campo
+      }
+      console.log(eval(valor_campo))
+  }
+      else if (tipo === 'valor' ){ 
+      document.getElementById('resultado').value += valor
     }
-        else if (tipo === 'valor' ){ 
-        document.getElementById('resultado').value += valor
-        }
-}
+
+
+    function calcularTabuada() {
+      let numero = document.getElementById('resultado').value;
+      let result = "";
+      for (let i = 1; i <= 10; i++) {
+        result += `${numero} x ${i} = ${numero * i}<br>`;
+      }      
+      document.getElementById("tabuada").innerHTML = result;
+    }
+   calcularTabuada()
+  }
+
+    
+
+
+
 
 function playSound() {
   const audio = document.getElementById('myAudio');
@@ -84,3 +99,8 @@ ceButton.addEventListener('click', () => {
   const input = document.querySelector('input'); // Selecionar o input
   ce(input);
 });
+
+
+
+
+ 

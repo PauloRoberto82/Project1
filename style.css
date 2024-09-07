@@ -12,16 +12,19 @@
 }
 
 body{
-    background-image: linear-gradient(to top, #3f5f78 50%,#6393c1 100%);
+    background: linear-gradient(to left, rgb(19, 84, 153), rgb(76, 106, 133));
 }   
-
+#calc{
+    text-align: center;
+    margin-top: 30px;
+}
 .base{
     font-family: 'RR';
     padding: 5px 5px 10px 0px;
     width: 300px;
     height: 300px;
     display:grid;
-    margin: 300px auto;
+    margin: 20px auto;
     background-color: rgb(33, 33, 33);
     border-radius: 10px;
     border: 2px black solid;
@@ -158,3 +161,8 @@ color:yellow;
 color:rgb(10, 181, 178);
 }
 
+#tabuada{
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;   
+}
