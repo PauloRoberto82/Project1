@@ -21,7 +21,7 @@
 }
 
 body{
-    background: linear-gradient(to left, rgb(19, 84, 153), rgb(76, 106, 133));
+    background: linear-gradient(to left, rgb(46, 115, 188), rgb(76, 106, 133));
 }   
 
 .base{
@@ -39,8 +39,8 @@ body{
     font-family: 'RR';
     font-size: 30px;
     font-weight: 400;
-    background-color: rgb(98, 95, 95);
-    color: rgba(55, 232, 61, 0.859);
+    background-color: rgb(119, 117, 117);
+    color: rgba(49, 227, 55, 0.859);
     text-align: right;
     border-radius: 10px;
     border: 2px rgb(0, 0, 0) solid;
@@ -182,21 +182,30 @@ color:rgb(10, 181, 178);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
 }
 
-#operador{
-    font-family: 'Seg';
+h3{
+    font-family: 'RR';
     font-size: 30px;
-    color: #00ff00;
+    color:#1f1e1e;
+}
+
+#operador{
+    text-align: center;
+    font-family: 'Seg';
+    font-size: 50px;
+    color: #d5b721;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    margin-left: 5px;
+    margin: 10px auto;
+    border: 5px solid grey; 
+    margin-left: 450px ;
 }
 #resp{
+    text-align: center;
     font-family: 'Seg';
-    font-size: 30px;
-    color: #00ff00;
-    width: 50px;
+    font-size: 50px;
+    color: #d5b721;
     height: 50px;
-    border-radius: 50%;
-    margin-left: 5px;
+    margin: 10px auto;
+    border: 5px solid rgb(20, 20, 20); 
+   
 }
