@@ -8,7 +8,7 @@
         <title>Calculadora</title>
     </head>
     <body>
-    <h1 id="calc">Calculadora</h1>
+  
     <div class="base">
         <input class="ipt" id="resultado" type="text" placeholder="0" disabled="disabled">
         
@@ -23,21 +23,21 @@
        <button class="btss" onclick="calcular('valor','7'),playSound()" type="button">7</button>
        <button class="btss" onclick="calcular('valor','8'),playSound()" type="button">8</button>
        <button class="btss" onclick="calcular('valor','9'),playSound()" type="button">9</button>
-       <button class="btss" onclick="calcular('acao','/'),playSound()" type="button">/</button>
+       <button class="btss" onclick="calcular('acao','/'),playSound()" type="button" >÷</button>
        </div>
 
        <div class="bts2">
         <button class="btss" onclick="calcular('valor','4'),playSound()" type="button">4</button>
         <button class="btss" onclick="calcular('valor','5'),playSound()" type="button">5</button>
         <button class="btss" onclick="calcular('valor','6'),playSound()" type="button">6</button>
-        <button class="btss" onclick="calcular('acao','*'),playSound()" type="button">*</button>
+        <button class="btss" onclick="calcular('acao','*'),playSound()"  type="button">x</button>
         </div>
 
         <div class="bts3">
          <button class="btss" onclick="calcular('valor','1'),playSound()" type="button">1</button>
          <button class="btss" onclick="calcular('valor','2'),playSound()" type="button">2</button>
          <button class="btss" onclick="calcular('valor','3'),playSound()" type="button">3</button>
-         <button class="btss" onclick="calcular('acao','-'),playSound()" type="button">-</button>
+         <button class="btss" onclick="calcular('acao','-'),playSound()" type="button" >-</button>
         </div>
         <div class="bts4">
             <button class="btss" onclick="calcular('valor','0'),playSound()" type="button">0</button>
@@ -52,12 +52,14 @@
 
 
 
-    <h1 id="calc">Tabuada</h1>
+    
    
-        <!--<input type="number" id="numero" value="5">-->
+
+    <h4>Operador escolhido:  </h4><div id="operador"></div>
+    <div id="resp"></div>
+    <div id="tabuada"></div>
   
-  <div id="tabuada"></div>
- 
+    
    
 
 

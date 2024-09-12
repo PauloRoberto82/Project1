@@ -6,6 +6,15 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'HH' ;
+    src: url('fonts/Holidays\ Homework.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,10 +23,7 @@
 body{
     background: linear-gradient(to left, rgb(19, 84, 153), rgb(76, 106, 133));
 }   
-#calc{
-    text-align: center;
-    margin-top: 30px;
-}
+
 .base{
     font-family: 'RR';
     padding: 5px 5px 10px 0px;
@@ -161,8 +167,36 @@ color:yellow;
 color:rgb(10, 181, 178);
 }
 
-#tabuada{
+
+#tabuada {
+    font-family: 'HH';
     text-align: center;
-    font-size: 25px;
-    margin: 0px;   
+    font-size: 30px;
+    background-color: #33433d; /* Cor de fundo preta */
+    color: #ffffff; /* Cor do texto branca */
+    padding: 100;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 5px solid #dd8b07; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+#operador{
+    font-family: 'Seg';
+    font-size: 30px;
+    color: #00ff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#resp{
+    font-family: 'Seg';
+    font-size: 30px;
+    color: #00ff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
 }

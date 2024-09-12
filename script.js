@@ -1,35 +1,98 @@
-function calcular (tipo, valor,calcularTabuada){
+function calcular (tipo, valor){
   if(tipo === 'acao'){
-      if(valor === 'c'){
-          //limpar o visor (id resultado)
-          document.getElementById('resultado').value= ''
-      }
-      if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.' ){
-          document.getElementById('resultado').value += valor
-      }
-      if(valor === '='){
-          var valor_campo = eval(document.getElementById('resultado').value )
-          document.getElementById('resultado').value = valor_campo
-      }
-      console.log(eval(valor_campo))
+    if(valor === 'c'){
+      //limpar o visor (id resultado)
+      document.getElementById('resultado').value= ''
+    }
+    if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.' ){
+      document.getElementById('resultado').value += valor  
+      document.getElementById('operador').value += valor  
+      document.getElementById('operador').innerHTML  = valor
+
+    }
+    if(valor === '='){
+      var valor_campo = eval(document.getElementById('resultado').value )
+      document.getElementById('resultado').value = valor_campo
+      document.getElementById('resp').value = valor_campo
+      document.getElementById('resp').innerHTML = valor_campo
+      
+    }
   }
-      else if (tipo === 'valor' ){ 
-      document.getElementById('resultado').value += valor
-    }
-
-
-    function calcularTabuada() {
-      let numero = document.getElementById('resultado').value;
-      let result = "";
-      for (let i = 1; i <= 10; i++) {
-        result += `${numero} x ${i} = ${numero * i}<br>`;
-      }      
-      document.getElementById("tabuada").innerHTML = result;
-    }
-   calcularTabuada()
+  else if (tipo === 'valor' ){ 
+    document.getElementById('resultado').value += valor
+  }
+  calcular2()
   }
 
+function  calcular2 (opera){
+   opera = document.getElementById('operador').value; 
     
+
+   switch(opera){
+    case '+': Adicao()
+    break;
+    case '-': Subtracao()
+    break;
+    case '*': Multiplicacao()
+    break;
+    case '/': Divisao()
+    break;
+    default: calcular()
+   }
+}
+
+
+
+function Multiplicacao() {
+             let numero = document.getElementById('resultado').value;
+             let result = "";
+             for (let i = 1; i <= 10; i++) {
+             result += `${numero} x ${i} = ${numero*i}<br>`;  
+             }
+             document.getElementById("tabuada").innerHTML = result;
+             }          
+function Divisao() {
+             let numero = document.getElementById('resultado').value;
+             let result = "";
+             for (let i = 1; i <= 10; i++) {
+             result += `${numero} ÷ ${i} = ${(numero)/i}<br>`;
+             }      
+             document.getElementById("tabuada").innerHTML = result;  
+             }                      
+  
+function Subtracao() {
+            let numero = document.getElementById('resultado').value;
+            let result = "";
+            for (let i = 1; i <= 10; i++) {
+            result += `${numero} - ${i} = ${(numero)-i}<br>`;
+            }      
+            document.getElementById("tabuada").innerHTML = result;  
+            }                    
+            
+function Adicao() {
+            let numero = document.getElementById('resultado').value;
+            
+            let result = "";
+            for (let i = 1; i <= 10; i++) {
+            result += `${numero} + ${i} = ${(numero) + i}<br>`;
+            }      
+            document.getElementById("tabuada").innerHTML = result;  
+            }
+       
+                 
+          
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
 
