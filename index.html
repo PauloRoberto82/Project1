@@ -8,6 +8,9 @@
         <title>Calculadora</title>
     </head>
     <body>
+        
+    <div id="operador"></div>
+    <span id="resp"></span>
   
     <div class="base">
         <input class="ipt" id="resultado" type="text" placeholder="0" disabled="disabled">
@@ -26,14 +29,13 @@
        <button class="btss" onclick="calcular('acao','/'),playSound()" type="button" >÷</button>
        </div>
 
-       <div class="bts2">
+        <div class="bts2">
         <button class="btss" onclick="calcular('valor','4'),playSound()" type="button">4</button>
         <button class="btss" onclick="calcular('valor','5'),playSound()" type="button">5</button>
         <button class="btss" onclick="calcular('valor','6'),playSound()" type="button">6</button>
         <button class="btss" onclick="calcular('acao','*'),playSound()"  type="button">x</button>
         </div>
-
-        <div class="bts3">
+        <div class="bts3">                        
          <button class="btss" onclick="calcular('valor','1'),playSound()" type="button">1</button>
          <button class="btss" onclick="calcular('valor','2'),playSound()" type="button">2</button>
          <button class="btss" onclick="calcular('valor','3'),playSound()" type="button">3</button>
@@ -50,15 +52,7 @@
     <audio id="myAudio" src="audio/click.mp3" autoplay></audio>
     <script src="script.js"></script> 
 
-
-
-    
    
-
-    <h3 style="text-align: center;">Operador escolhido:  </h3>
-    <div id="operador"></div>
-    <h3 style="text-align: center;"> Resultado calculado </h3>
-    <div id="resp"></div>
     <div id="tabuada"></div>
   
     

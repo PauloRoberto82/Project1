@@ -13,8 +13,6 @@
     font-style: normal;
 }
 
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -39,8 +37,8 @@ body{
     font-family: 'RR';
     font-size: 30px;
     font-weight: 400;
-    background-color: rgb(119, 117, 117);
-    color: rgba(49, 227, 55, 0.859);
+    background-color: rgb(98, 97, 97);
+    color: rgba(2, 244, 10, 0.859);
     text-align: right;
     border-radius: 10px;
     border: 2px rgb(0, 0, 0) solid;
@@ -55,6 +53,7 @@ body{
 .ipt::placeholder {
     color: var(--placeholder-color);
   }
+
 .c{
     background-color: rgb(216, 93, 93);
     width:60px;
@@ -167,45 +166,17 @@ color:yellow;
 color:rgb(10, 181, 178);
 }
 
-
 #tabuada {
     font-family: 'HH';
     text-align: center;
     font-size: 30px;
     background-color: #33433d; /* Cor de fundo preta */
-    color: #ffffff; /* Cor do texto branca */
+    color: #d0cfcf; /* Cor do texto branca */
     padding: 100;
     margin-left: 100px;
     margin-right: 100px;
-    border: 5px solid #dd8b07; /* Borda preta */
+    border: 5px solid #a1804b; /* Borda preta */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
 }
 
-h3{
-    font-family: 'RR';
-    font-size: 30px;
-    color:#1f1e1e;
-}
-
-#operador{
-    text-align: center;
-    font-family: 'Seg';
-    font-size: 50px;
-    color: #d5b721;
-    width: 50px;
-    height: 50px;
-    margin: 10px auto;
-    border: 5px solid grey; 
-    margin-left: 450px ;
-}
-#resp{
-    text-align: center;
-    font-family: 'Seg';
-    font-size: 50px;
-    color: #d5b721;
-    height: 50px;
-    margin: 10px auto;
-    border: 5px solid rgb(20, 20, 20); 
-   
-}
