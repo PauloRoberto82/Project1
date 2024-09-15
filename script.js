@@ -20,7 +20,7 @@ function calcular(tipo, valor) {
 
       // Calcular o resultado da expressão
       try {
-        const valor_campo = eval(resultado);
+        const valor_campo = eval(resultado).toFixed(2);
         document.getElementById('resultado').value = valor_campo;
         document.getElementById('resp').value = valor_campo;
 
@@ -52,7 +52,7 @@ function calcular(tipo, valor) {
 function Adicao(numero) {
   let result = "";
   for (let i = 1; i <= 10; i++) {
-    result += `${numero} + ${i} = ${(numero + i).toFixed(2)}<br>`;
+    result += `${numero} + ${i} = ${numero + i}<br>`;
   }
   document.getElementById("tabuada").innerHTML = result;
 }
@@ -60,7 +60,7 @@ function Adicao(numero) {
 function Subtracao(numero) {
   let result = "";
   for (let i = 1; i <= 10; i++) {
-    result += `${numero} - ${i} = ${(numero - i).toFixed(2)}<br>`;
+    result += `${numero} - ${i} = ${numero - i}<br>`;
   }
   document.getElementById("tabuada").innerHTML = result;
 }
@@ -68,7 +68,7 @@ function Subtracao(numero) {
 function Multiplicacao(numero) {
   let result = "";
   for (let i = 1; i <= 10; i++) {
-    result += `${numero} X ${i} = ${(numero * i).toFixed(2)}<br>`;
+    result += `${numero} X ${i} = ${numero * i}<br>`;
   }
   document.getElementById("tabuada").innerHTML = result;
 }
@@ -76,7 +76,7 @@ function Multiplicacao(numero) {
 function Divisao(numero) {
   let result = "";
   for (let i = 1; i <= 10; i++) {
-    result += `${numero} ÷ ${i} = ${(numero / i).toFixed(2)}<br>`;
+    result += `${numero} ÷ ${i} = ${numero / i}<br>`;
   }
   document.getElementById("tabuada").innerHTML = result;
 }
