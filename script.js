@@ -1,27 +1,36 @@
 function calcular(tipo, valor) {
+  const operadores = ['+', '-', '*', '/', '.'];
+  const resultadoField = document.getElementById('resultado');
+  const operadorField = document.getElementById('operador');
+  
   if (tipo === 'acao') {
     if (valor === 'c') {
       // Limpar o visor
-      document.getElementById('resultado').value = '';
-      document.getElementById('operador').value = '';
+      resultadoField.value = '';
+      operadorField.value = '';
       document.getElementById('tabuada').innerHTML = ''; // Limpar a tabuada também
     }
-    
-    if (['+', '-', '*', '/', '.'].includes(valor)) {
-      // Adicionar operador ao campo de resultado
-      document.getElementById('resultado').value += valor;
-      document.getElementById('operador').value = valor; // Guardar o operador
+
+    if (operadores.includes(valor)) {
+      // Verificar se o último caractere já é um operador
+      const ultimoCaractere = resultadoField.value.slice(-1);
+
+      if (!operadores.includes(ultimoCaractere)) {
+        // Adicionar operador ao campo de resultado
+        resultadoField.value += valor;
+        operadorField.value = valor; // Guardar o operador
+      }
     }
-    
+
     if (valor === '=') {
       // Obter o valor digitado no campo de resultado
-      const resultado = document.getElementById('resultado').value;
-      const operador = document.getElementById('operador').value;
+      const resultado = resultadoField.value;
+      const operador = operadorField.value;
 
       // Calcular o resultado da expressão
       try {
-        const valor_campo = eval(resultado).toFixed(2);
-        document.getElementById('resultado').value = valor_campo;
+        const valor_campo = eval(resultado);
+        resultadoField.value = valor_campo;
         document.getElementById('resp').value = valor_campo;
 
         // Se o operador for de tabuada, chamar a função correspondente
@@ -40,14 +49,15 @@ function calcular(tipo, valor) {
             break;
         }
       } catch (error) {
-        document.getElementById('resultado').value = "Erro";
+        resultadoField.value = "Erro";
       }
     }
   } else if (tipo === 'valor') {
     // Adicionar valor ao campo de resultado
-    document.getElementById('resultado').value += valor;
+    resultadoField.value += valor;
   }
 }
+
 
 function Adicao(numero) {
   let result = "";
